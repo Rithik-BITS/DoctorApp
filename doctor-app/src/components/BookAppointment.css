@@ -1,0 +1,87 @@
+.book-appointment-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .filter-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #34495e;
+    min-width: 160px;
+  }
+  
+  .filter-form select,
+  .filter-form input {
+    margin-top: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+  }
+  
+  .filter-form select:focus,
+  .filter-form input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .filter-form button {
+    padding: 0.6rem 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    align-self: flex-end;
+  }
+  
+  .filter-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .doctor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .doctor-card {
+    background-color: #ecf0f1;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .doctor-card:hover,
+  .doctor-card:focus {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 5px 15px rgba(52,152,219,0.5);
+    outline: none;
+  }
+  

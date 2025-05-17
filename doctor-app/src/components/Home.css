@@ -1,0 +1,205 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+  
+  .tabs button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    background-color: white;
+    color: #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tabs button.active,
+  .tabs button:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .filter-form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-form input,
+  .filter-form select {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+  }
+  
+  .filter-form input:focus,
+  .filter-form select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .test-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .test-card {
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .test-card h3 {
+    margin: 0 0 0.5rem;
+    color: #2c3e50;
+  }
+  
+  .test-card p {
+    color: #34495e;
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+  }
+  
+  .book-btn {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 300px;
+    max-width: 90vw;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .popup label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+  }
+  
+  .popup input[type="date"],
+  .popup input[type="time"] {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1.8px solid #ccc;
+  }
+  
+  .popup-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .popup-buttons button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-buttons button:first-child {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .popup-buttons button:first-child:hover {
+    background-color: #1e8449;
+  }
+  
+  .popup-buttons button:last-child {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .popup-buttons button:last-child:hover {
+    background-color: #c0392b;
+  }
+  
+  .appointment-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .appointment-card {
+    background-color: #f0f3f4;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .appointment-card h3 {
+    margin-bottom: 0.3rem;
+    color: #2c3e50;
+  }
+  
+  .appointment-card p {
+    margin: 0.2rem 0;
+    color: #34495e;
+  }
+  
