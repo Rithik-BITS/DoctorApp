@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { AuthContext } from "../AuthContext";
 import "./DoctorBookingModal.css";
+import { toast } from "react-toastify";
 
 export default function DoctorBookingModal({ doctor, date, time, onClose }) {
   const { user, addAppointment } = useContext(AuthContext);
@@ -27,7 +28,7 @@ export default function DoctorBookingModal({ doctor, date, time, onClose }) {
         username: user.username,
       });
       setLoading(false);
-      alert("Appointment booked successfully!");
+      toast.success("Doctor appointment booked successfully!");
       onClose();
     }, 800);
   }

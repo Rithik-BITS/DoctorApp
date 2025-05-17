@@ -6,6 +6,8 @@ import BookAppointment from "./components/BookAppointment";
 import AppointmentHistory from "./components/AppointmentHistory";
 import Navbar from "./components/Navbar";
 import { AuthContext } from "./AuthContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -31,7 +33,9 @@ function App() {
           element={user ? <AppointmentHistory /> : <Navigate to="/" />}
         />
         <Route path="*" element={<Navigate to={user ? "/home" : "/"} />} />
+
       </Routes>
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 }

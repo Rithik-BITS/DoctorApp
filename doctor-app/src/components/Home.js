@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import "./Home.css";
 import { AuthContext } from "../AuthContext";
 import { labTests } from "../data";
+import { toast } from "react-toastify";
 
 
 export default function Home() {
@@ -52,7 +53,7 @@ export default function Home() {
 
     addLabAppointment(newAppointment);
     setShowLabPopup(false);
-    alert("Lab test appointment booked successfully!");
+    toast.success("Lab test appointment booked successfully!");
   }
 
   return (
